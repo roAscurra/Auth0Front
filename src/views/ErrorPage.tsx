@@ -4,8 +4,10 @@ const ErrorPage = () => {
   const error = useRouteError();
   let errorMessage: string;
 
+
   if (isRouteErrorResponse(error)) {
-    errorMessage = error.error?.message || error.statusText;
+    // TypeScript guard to check if error property exists
+    errorMessage = (error as any).error?.message || error.statusText;
   } else if (error instanceof Error) {
     errorMessage = error.message;
   } else if (typeof error === "string") {
