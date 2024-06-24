@@ -1,3 +1,7 @@
+# Usuario de prueba:
+user: admin@gmail.com
+password: GBc!^U#u&Db%8QF
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
